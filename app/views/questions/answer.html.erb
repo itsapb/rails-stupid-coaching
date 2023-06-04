@@ -1,6 +1,10 @@
-<h2>this is the question</h2>
-<p><%= @question %></p>
-<h2>this is the answer</h2>
-<p><%= @answer %></p>
-
+<div class="flexbox">
+<h2>You asked:</h2>
+<p> "<%= @question %>"</p>
+</div>
+<div class="flexbox">
+<h2>He replied: </h2>
+<p> "<%= @answer %>"</p>
+</div>
+<br>
 <%=link_to "Go back and ask a new question", ask_path %>

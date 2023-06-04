@@ -3,6 +3,9 @@
   <head>
     <title>RailsStupidCoaching</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,8 +14,13 @@
   </head>
 
   <body>
-  <div> <h1>Stupid Coach</h1></div>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dfx8gzbl4/image/upload/v1685870261/abigail-keenan-8-s5QuUBtyM-unsplash_athxsz.jpg);">
+  <div class="container">
+    <h1>Stupid Coach</h1>
     <%= yield %>
-    <div> <p>Right now it is <%= Time.now %></p></div>
+    <br>
+    <p><%= Time.now %></p>
+  </div>
+</div>
   </body>
 </html>
